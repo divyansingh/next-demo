@@ -64,7 +64,8 @@ export async function getStaticProps(context) {
                 address: selectedMeetup.address,
                 image: selectedMeetup.image,
                 description: selectedMeetup.description
-            }
+            },
+            revalidate:1
             //  {
             //     image: 'https://upload.wikimedia.org/wikipedia/commons/0/03/UCDNewmanHouse.jpg',
             //     id: meetUpId,
