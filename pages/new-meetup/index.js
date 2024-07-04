@@ -5,7 +5,7 @@ import Head from "next/head";
 export default function NewMeetUpPage() {
     const route = useRouter()
     async function addMeetphandler(enteredData) {
-        console.log(enteredData)
+        // console.log(enteredData)
         const response = await fetch('/api/new-meetup', {
             method: 'POST',
             body: JSON.stringify(enteredData),
@@ -15,7 +15,7 @@ export default function NewMeetUpPage() {
         })
         const data = await response.json();
 
-        console.log(data)
+        // console.log(data)
         route.push('/')
     }
     return (
